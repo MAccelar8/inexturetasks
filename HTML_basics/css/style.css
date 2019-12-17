@@ -1,0 +1,154 @@
+h1 {
+  font-family: "Inria Serif", serif;
+  text-align: center;
+  color: #323545;
+  font-weight: bold;
+}
+
+h3,
+p {
+  font-family: "Inria Serif", serif;
+  color: #3245a5;
+}
+.h31 {
+  color: #e6e8f4;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+  position: relative;
+}
+
+p {
+  text-align: left;
+}
+span {
+  color: coral;
+  background-color: darkgreen;
+}
+
+.superdiv1 {
+  background-color: #b1bbec;
+  /* margin-bottom: -4px; */
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.superdiv2 {
+  background-color: #b1bbec;
+}
+
+.superdiv3 {
+  background-color: #b1bbec;
+}
+
+.superdiv4 {
+}
+.superdiv5 {
+  position: relative;
+}
+.posdiv1 {
+  height: auto;
+  position: relative;
+  background-color: #b1bbec;
+}
+
+.div1 {
+  background-color: #3c457d;
+  width: 50%;
+  /* margin-left: 4px; */
+  margin-right: -5px;
+  height: 150px;
+  display: inline-block;
+}
+
+.div2 {
+  background-color: #536ade;
+  width: 50%;
+  height: 150px;
+  /* margin-left: -4px; */
+  display: inline-block;
+}
+
+.div3 {
+  background-color: #3c457d;
+  width: 50%;
+  /* margin-left: 4px;
+    margin-right: -8px; */
+  height: 150px;
+  float: left;
+}
+
+.div4 {
+  background-color: #536ade;
+  width: 50%;
+  height: 150px;
+  float: right;
+  /* margin-left: -4px; */
+  /* display: inline-block; */
+}
+
+.div5 {
+  background-color: #323545;
+  color: #e6e8f4;
+  height: 50px;
+  width: 50px;
+  position: static;
+  padding: 5px;
+}
+
+.div6 {
+  background-color: #323545;
+  height: 50px;
+  /* height: fit-content; */
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 3;
+}
+
+.div7 {
+  background-color: #323545;
+  color: #e6e8f4;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  position: fixed;
+  z-index: 5;
+}
+
+.div8 {
+  color: #e6e8f4;
+  padding: 5px;
+  overflow: auto;
+  background-color: #323545;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.div9 {
+  background-color: #3c457d;
+  width: 50%;
+  /* margin-left: 3px; */
+  margin-right: -5px;
+  height: 150px;
+  display: inline-block;
+}
+
+.div10 {
+  background-color: #536ade;
+  width: 50%;
+  height: 150px;
+  /* margin-left: -1px; */
+  display: inline-block;
+}
+
+.div11 {
+  background-color: #3c457d;
+  display: block;
+  height: 150px;
+}
