@@ -10,7 +10,7 @@ p {
   font-family: "Inria Serif", serif;
   color: #3245a5;
 }
-.h31 {
+.div6 h3 {
   color: #e6e8f4;
   top: 50%;
   right: 50%;
@@ -40,8 +40,13 @@ span {
 
 .superdiv3 {
   background-color: #b1bbec;
+ 
 }
 
+.superdiv3:before, .superdiv3:after{
+    content: "";
+    display: table;
+}
 
 .superdiv5 {
   position: relative;
@@ -50,6 +55,7 @@ span {
   height: auto;
   position: relative;
   background-color: #b1bbec;
+  /* clear: both; */
 }
 
 .div1 {
@@ -83,6 +89,7 @@ span {
   width: 50%;
   height: 150px;
   float: right;
+  
   /* margin-left: -4px; */
   /* display: inline-block; */
 }
