@@ -158,3 +158,19 @@ span {
   display: block;
   height: 150px;
 }
+.block{
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #f05;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
