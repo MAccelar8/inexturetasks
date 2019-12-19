@@ -41,7 +41,6 @@
 }
 
 .hero-image{
-    overflow: hidden;
     position: relative;
 
 }
@@ -64,31 +63,94 @@
     color:black;
 } 
 .service-image button{
+    position: absolute;
+    margin: 20px 0 20px 0;
+    bottom: 0;
+    transform: translate(-50%,0);
     background-color: transparent;
     color: white;
     border-color: white;
 } 
+
+.service-image::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    right: 0;
+    top:   0;
+    left: 0;
+    bottom: 0;
+
+}
 .service-image{
-    max-height: 380px;
-    padding: 50px;
+    flex-direction: column;
+    min-height: 300px;
+    
+    padding: 25px;
     color: white;
     position: relative;
-    height: fit-content;
+    height :100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+
+.row-flex{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+
+
+.service-content{
+    margin-bottom: 50px;
+}
+
+.political-text::before{
+    background-color: rgba(255, 157, 0, 0.1);
+}
 .political-text{
-    background-image: url(https://www.inexture.com/wp-content/uploads/2018/12/political-digital-platform-cover-new.png?id=25838) !important;
+    background-image:url(../images/background-image.jpg) !important;    
+}
+
+.buisness-text::before{
+    background-color: rgba(4, 0, 255, 0.1);
 }
 .buisness-text{
-    background-image: url(https://www.inexture.com/wp-content/uploads/2018/12/business-network-platform-1.png?id=25831) !important;
+    background-image: url(../images/background-image.jpg) !important;
 }
+
+.election-text::before{
+    background-color: rgba(255, 0, 179,.10);
+}
+
+
 .election-text{
-    background-image: url(https://www.inexture.com/wp-content/uploads/2019/09/election-digital-platform.png?id=26246) !important;
+    background-image:url(../images/background-image.jpg) !important;
 
 }
+
+/* .political-text{
+    background-image:linear-gradient(
+        rgba(255, 0, 0, 0.35), 
+        rgba(255, 0, 0, 0.35)
+      ), url(../images/background-image.jpg) !important;
+}
+.buisness-text{
+    background-image:linear-gradient(
+        rgb(255, 166, 0,0.35), 
+        rgba(255, 166, 0, 0.35)
+      ), url(../images/background-image.jpg) !important;
+}
+.election-text{
+    background-image:linear-gradient(
+        rgba(25, 0, 255, 0.35), 
+        rgba(25, 0, 255, 0.35)
+      ), url(../images/background-image.jpg) !important;
+
+} */
 
 .hero-image-img{
     width:100%;
@@ -98,6 +160,10 @@
 .service-heading{
     text-align: center;
     padding: 25px;;
+}
+
+.card{
+    box-shadow: 2px 3px 11px lightgray;
 }
 
 .card .card-img-top{
@@ -114,6 +180,7 @@ ul li a{
 
 ul a:hover{
     text-decoration: none;
+    color: blanchedalmond;
 }
 
 .inexture-footer{
@@ -129,4 +196,8 @@ ul a:hover{
 .card-body button:hover{
     background-color: black;
     color: white;
+}
+
+.product-container{
+    margin-bottom: 50px;
 }
