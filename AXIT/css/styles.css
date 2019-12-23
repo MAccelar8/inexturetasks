@@ -209,3 +209,166 @@ border-width: 1px 0px 1px 0px;
 .hero-form-button span:hover{
     text-decoration: none;
 }
+
+.social-media-content{
+    margin-top: 17px;
+}
+.social-media-content h3{
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+}
+.social-media-content p{
+    font-family: "Open Sans", sans-serif;
+    color:#86878B;
+}
+.hero-icons{
+    float: right;
+    margin-top: 30px;
+}
+.hero-icons i{
+    margin-left: 42px;
+    color: #86878B;
+    /* content: ""; */
+    font-size: 48px;
+}
+
+.transition-list-wrap{
+    padding-top:146px;
+    padding-bottom: 113px;
+  
+    background-color: #F5F5F5;
+}
+.transition-list{
+    
+}
+.transition-list-button-selected{
+    font-family: "Open Sans", sans-serif;
+    padding : 46px 37px 48px 36px;
+    font-size: 15px;
+    list-style-type:none;
+    color: #FFFFFF;
+    background-image: url('../assets/images/tab_1_button_u83_selected@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.transition-list-button-mouseover{
+    font-family: "Open Sans", sans-serif;
+    padding : 46px 37px 48px 36px;
+    font-size: 15px;
+    list-style-type:none;
+    color: #FFFFFF;
+    background-image: url('../assets/images/tab_2_button_u85_mouseover@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.transition-list a{
+    text-decoration: none;
+    color: white;
+}
+.transition-list a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.transition-content{
+    padding-left: 68px;
+}
+
+.transition-content h3{
+    margin-bottom: 47px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 1000;
+    color: #000000;
+    font-size: 20px;
+}
+
+.transition-content p{
+    margin-bottom: 47px;
+    color: #86878B;
+    font-size: 14px;
+}
+
+.transition-content button{
+    background-image: url("../assets/images/btn_primary_u98@2x.png");
+    font-family: "Open Sans", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 48px;
+    border-width: 0px;
+    width: 123px;
+    font-size: 15px;
+    color: white;
+}
+.transition-image{
+    float: right;
+}
+
+.sub-list-section{
+    padding-bottom: 133px;
+    padding-top: 102px;
+}
+
+.subsection-content{
+    float: right;
+    margin-left: 100px;
+}
+
+.subsection-image{
+    float: right;
+    /* margin-right: 143px; */
+}
+
+.subsection-content h3{
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 52px;
+}
+
+.subsection-content-paragraph{
+    position: relative;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #86878B;
+    opacity: 0.6;
+    margin-bottom:46px;
+}
+
+.subsection-content-paragraph::before{
+    position: absolute;
+    background-image: url("../assets/images/divider_orange_u74.png");
+    content: "";
+  height: 2px;
+  min-width: 64px;
+  left: 0;
+  top: -26px;
+
+}
+
+
+.subsection-title img{
+    height: 40px;
+    width: 40px;
+    margin-right: 30px;
+}
+.subsection-title{
+    display: inline-flex;
+}
+.subsection-title-title h5{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.subsection-title-title p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #86878B;
+    opacity:1;
+}
+
+.subsection-block{
+    display: block;
+}
