@@ -1,24 +1,37 @@
 
-.navigationbar{
-    background-color: #222129;
+.bg-light{
+    background-color: #222129 !important;
+    /* background-color: #222129; */
+    /* height: 80px; */
 }
+/* .navbar .container{
+    max-width: 640px;
+} */
+
+/* .navbar-nav{
+  
+    background-color:#222129 ;
+} */
 .image-as-background{
     position: relative;
     background-image: url('../images/background-image.jpg');
-    height: 100vh;
+    height: calc(100vh - 70.63px);    
+    /* height: 100vh; */
+    /* height: 0px; */
+    opacity: 0.85;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: cornsilk;
 }
-/* 
+
 .text-scaling{
     position: absolute;
     right: 50%;
     top: 50%;
     transform: translate(50%,-50%);
-    #FFF8D3
-} */
+    /* #FFF8D3 */
+}
 .hero-image-text-scaling{
     overflow: hidden;
     text-align: center;
@@ -41,7 +54,9 @@
 }
 
 .hero-image{
+    /* overflow: hidden; */
     position: relative;
+    /* height: 781px; */
 
 }
 
@@ -106,6 +121,8 @@
 
 .service-content{
     margin-bottom: 50px;
+    z-index: 15;
+    color: white;
 }
 
 .political-text::before{

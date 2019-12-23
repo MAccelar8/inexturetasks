@@ -18,60 +18,103 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Inexture Solutions</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- <script>
+      $(document).ready(function(){
+        $('#hhhh').css("height",window.innerHeight);
+      });
+    </script> -->
   </head>
   <body>
-    <!-- <div class="container"> -->
+    
     <header>
-      <nav
-      class="navbar navbar-dark fixed-top navbar-expand-lg navigationbar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="./images/logo.png" alt="Start Bootstrap Logo" />
-          <!-- <span class="ml-1">Inexture Solutions LLP</span> -->
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa fa-bars"></i>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navigationbar">
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Start Bootstrap Logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto pt-3 pt-lg-0">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
+              <a class="nav-link" href="#">Blogs</a>
+            </li>  
             <li class="nav-item">
               <a class="nav-link" href="#">Offerings</a>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
+            
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
     </header>
 
-    <!-- <div class="row">
-        <div class="col-md-12 image-as-background text-center">
-              <div class="text-scaling"> 
-                <h1>Innovative Solutions to bring your ideas to life</h1>
-              <p>provides creative, scalable and futuristics solutions</p>
-              </div> 
+    <!-- <div class="container"> -->
+    <!-- <div class="container-fluid"> -->
+      <!-- <header>
+        <nav
+        class="navbar navbar-dark fixed-top navbar-expand-lg navigationbar"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="./images/logo.png" alt="Start Bootstrap Logo" />
+            <span class="ml-1">Inexture Solutions LLP</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offerings</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      </header> -->
+    <!-- </div> -->
+
+    <!-- <div class="container-fluid image-as-background ">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="hhhh" class="text-center">
+            <div class="text-scaling"> 
+              <h1>Innovative Solutions to bring your ideas to life</h1>
+            <p>provides creative, scalable and futuristics solutions</p>
+            </div> 
+      </div>
+        </div>
+      </div>
+        
       </div> -->
 
     <!-- <div class="container-fluid"> -->
-      <!-- <div class="row">
-        <div class="col-md-12"> -->
-          <div class="hero-image">
+      <!-- <div class="row"> -->
+        <!-- <div class="col-md-12"> -->
+          <div id="hero-image-id" class="hero-image">
             <img
+              
               src="./images/background-image.jpg"
               alt="Image"
               class="hero-image-img"
@@ -84,8 +127,8 @@
               </button>
             </div>
           </div>
-        <!-- </div>
-      </div> -->
+        <!-- </div> -->
+      </div>
     <!-- </div> -->
     <div class="container-fluid">
       <div class="row">
@@ -99,7 +142,7 @@
         
           <div class="service-content">
             <h4>POLITICAL DIGITAL PLATFORM</h4>
-          <p style="color:white">
+          <p>
             One of the most awaited app which completely eliminates the
             traditional method of campaigning door to door has arrived. So if
             you are looking for hassle free and convenient campaigning
@@ -224,6 +267,9 @@
     <footer class="inexture-footer">
       <div class="container-fluid">
         <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="./images/logo.png" alt="Start Bootstrap Logo" />  
+          </div>
           <div class="col-md-4">
             <ul>
               <li><i class="fa fa-address-card"></i><span> Address</span><address>1113-1117 iSQUARE Corporate Park Before Shukan
@@ -236,8 +282,8 @@
               <li><i class="fa fa-envelope"></i><span> Email</span>: sales@inexture.com</li>
             </ul>
           </div>
-          <div class="col-md-4"></div>
-          <div class="col-md-4">
+          
+          <div class="col-md-4 text-center">
             <ul >
               <li> <a href="https://twitter.com"> <i class="fa fa-twitter"></i><span> Twitter</span></a> </a></li>
               <li><a href="https://twitter.com"> <i class="fa fa-facebook"></i><span> Facebook</span></a> </li>
@@ -248,6 +294,7 @@
         </div>
       </div>
     </footer>
+    
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
