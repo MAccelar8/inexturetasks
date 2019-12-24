@@ -8,6 +8,5 @@ $(document).ready(function(){
         $('#body-wrap').removeClass('body-wrapper');
         $('.sidebar').css('right','-350px');
         $('body').css('overflow','auto')
-
     });
 });

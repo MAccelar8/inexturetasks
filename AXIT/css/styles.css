@@ -419,58 +419,6 @@ header{
 
 
 
-.awesomepage-title h2{
-  font-size: 36px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  color: #212121;
-  margin-bottom: 50px;
-}
-
-.awesomepage-title p::before{
-  background-image: url("../assets/images/divider_orange_u74.png");
-  position: absolute;
-  content: '';
-  min-width: 64px;
-  height: 2px;
-  text-align: center;
-  left: 50%;
-  transform: translate(-50%,0);
-  top :-26px;
-
-}
-
-.awesome-page{
-  padding-top: 100px;
-  padding-bottom: 102px;
-}
-
-.awesomepage-title p{
-  position: relative;
-  color:#86878B;
-  font-size:14px;
-  margin-bottom: 80px;
-
-}
-
-.awesomepage-content{
-  text-align: center;
-}
-
-.awesomepage-content h3{
-  color: #333333;
-  font-weight: bold;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-
-
-}
-.awesomepage-content p{
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  color: #86878B;
-
-}
 
 
 .sidebar{
@@ -561,4 +509,178 @@ header{
   z-index: 70;
   position: relative;
   overflow: hidden;
+}
+
+.awesomepage-title h2{
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.awesomepage-title p::before{
+  background-image: url("../assets/images/divider_orange_u74.png");
+  position: absolute;
+  content: '';
+  min-width: 64px;
+  height: 2px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%,0);
+  top :-26px;
+
+}
+
+.awesome-page{
+  padding-top: 100px;
+  padding-bottom: 102px;
+}
+
+.awesomepage-title p{
+  position: relative;
+  color:#86878B;
+  font-size:14px;
+  margin-bottom: 80px;
+
+}
+
+.awesomepage-content{
+  text-align: center;
+}
+
+.awesomepage-content h3{
+  color: #333333;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+
+
+}
+.awesomepage-content p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #86878B;
+
+}
+
+.awesomepage-content img{
+  margin-bottom: 24px;
+}
+
+.stylish-axure{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  content: "";
+  height: 100%;
+}
+.stylish-axure{
+  position: relative;
+  background-image: url('../assets/images/u25_state0.png');
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  padding-top: 62px;
+  padding-bottom: 67px;
+}
+
+.stylish-axure-content h3{
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  /* font-weight: bold; */
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.stylish-axure-content p::before{
+  position: absolute;
+  background-image: url("../assets/images/divider_white_u72.png");
+  /* text-align: center; */
+  content:"";
+  height: 9px;
+  width: 70px;
+  top: -34px;
+  left: 50%;
+  transform: translate(-50%,0);
+
+
+}
+.stylish-axure-content p{
+  position: relative;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  /* font-weight: bold; */
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
+
+.contactus-component{
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.contactus-content{
+  text-align: center;
+}
+
+.contactus-content h3{
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  /* font-weight: bold; */
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.contactus-content p::before{
+  background-image: url("../assets/images/divider_orange_u74.png");
+  position: absolute;
+  height: 2px;
+  width:50px;
+  top: -26px;
+  left:50%;
+  transform: translate(-50%,0);
+  content: "";
+}
+.contactus-content p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #86878B;
+  position: relative;
+  margin-bottom: 78px;
+} 
+
+.contactus-component input{
+  margin-bottom:26px;
+  margin-right: 63px;
+} 
+.contactus-component button{
+  margin-top: 20px;
+  background-image: url("../assets/images/btn_primary_u98@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 15px;
+}
+
+footer{
+  text-align: center;
+  background-color: #000000;
+  padding-top: 21px;
+
+}
+.footer-content{
+  font-size: 24px;
+  color: #CCCCCC;
+  padding-bottom: 10px;
+
+}
+.footer-content i{
+  margin-left: 16px;
+}
+
+footer p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
