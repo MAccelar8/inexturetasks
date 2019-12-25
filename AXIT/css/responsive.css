@@ -34,6 +34,16 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width:991px) {
 
+    .clip-image-content{
+        padding : 130px 0 0 30px;
+    }
+
+
+
+
+
+
+
     .hero-icons i{
         margin-left: 15px;
         font-size: 36px;
@@ -111,9 +121,19 @@
         padding:0 30px;
     }
 
+    .transition-list-wrap .col-lg-4{
+        padding: 0;
+    }
+
     .transition-list-button-selected,.transition-list-button-mouseover{
-        padding: 30px;
+        height: 100px;
+        width: 100px;
+        /* padding: 30px; */
         font-size: 10px;
+    }
+
+    .transition-list ul{
+        padding: 0 0 0 0;
     }
 
     .hero-card-form{
