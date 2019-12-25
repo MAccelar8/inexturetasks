@@ -13,17 +13,37 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body onformchange="formLoad();">
     <div class="container form-validate-container">
-      <form action="" onsubmit="return validateForm()">
+      <form action="" >
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputFirstName">FirstName</label>
-            <input type="text" class="form-control" id="inputFirstName"  />
+            <input
+              type="text"
+              class="form-control"
+              id="inputFirstName"
+              onblur="validateFnRequired(this);formValidate()"
+            />
+            <div
+              class="alert alert-danger"
+              id="fn-required-alert"
+              role="alert"
+            ></div>
           </div>
           <div class="form-group col-md-6">
             <label for="inputLastName">LastName</label>
-            <input type="text" class="form-control" id="inputLastName" />
+            <input
+              type="text"
+              class="form-control"
+              id="inputLastName"
+              onblur="validateLnRequired(this);formValidate();"
+            />
+            <div
+              class="alert alert-danger"
+              id="ln-required-alert"
+              role="alert"
+            ></div>
           </div>
         </div>
         <div class="form-group">
@@ -33,11 +53,36 @@
             class="form-control"
             id="inputAddress"
             placeholder="1234 Main St"
+            onblur="validateAddress(this);formValidate();"
           />
+          <div class="alert alert-danger" id="address-alert" role="alert"></div>
         </div>
         <div class="form-group">
           <label for="inputPassword">Password</label>
-          <input type="password" class="form-control" id="inputPassword" />
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword"
+            onfocus="passwordfocus();"
+            onkeyup="validatePassword(this)"
+          />
+          <div
+            class="alert alert-danger"
+            id="password-alert"
+            role="alert"
+          ></div>
+          <label for="inputConfirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputConfirmPassword"
+            onblur="confirmPassword(this);formValidate();"
+          />
+          <div
+            class="alert alert-danger"
+            id="confirm-password-alert"
+            role="alert"
+          ></div>
         </div>
 
         <div class="row">
@@ -78,20 +123,37 @@
             aria-describedby="fileHelp"
             onchange="getFileData(this)"
           />
-          <label id="custom-file-label-id" class="custom-file-label" for="exampleInputFile">
-            Select file...
-          </label>
+          <label
+            id="custom-file-label-id"
+            class="custom-file-label"
+            for="exampleInputFile"
+            >Select file...</label
+          >
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onchange="validateEmail(this);">
-          </div>
-          <div class="form-group">
-            <label for="inputPhone">Phone Number</label>
-            <input type="text" class="form-control" id="inputPhone" placeholder="Enter Phone Number">
-          </div>
+          <label for="exampleInputEmail">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail"
+            placeholder="name@example.com"
+            onblur="validateEmail(this);formValidate();"
+          />
+          <div class="alert alert-danger" id="email-alert" role="alert"></div>
+        </div>
+        <div class="form-group">
+          <label for="inputPhone">Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhone"
+            placeholder="Enter Phone Number"
+            onblur="validatePhoneNumber(this);formValidate();"
+          />
+          <div class="alert alert-danger" id="phone-alert" role="alert"></div>
+        </div>
 
-          <button type="submit" class="btn btn-primary" >Validate</button>
+        <button type="submit" class="btn btn-primary disabled" id="submit-button" disabled>Validate</button>
       </form>
     </div>
 

@@ -2,3 +2,31 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+#password-alert{
+    display: none;
+}
+
+#email-alert{
+    display: none;
+}
+
+#phone-alert{
+    display: none;
+}
+
+#address-alert{
+    display: none;
+}
+
+#confirm-password-alert{
+    display:none;
+}
+
+#fn-required-alert{
+    display:none;
+}
+
+#ln-required-alert{
+    display:none;
+}
