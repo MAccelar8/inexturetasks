@@ -16,7 +16,219 @@
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .hero-card-form {
+        /* display: flex; */
+        margin-top: 130px;
+        float: none;
+        /* width: 198px; */
+    }
+
+    .card-form-text {
+        position: relative;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        /* background-position: center; */
+        text-align: center;
+        /* backface-visibility: visible; */
+        /* content: "aaaaaaaaaaaaa"; */
+        background-image: url(../assets/images/card_header_u257.png);
+        height: 54px;
+        width: 240px;
+        z-index: 5;
+    }
+
+    .card-form-text p {
+        
+        margin-top: 13px;
+        margin-bottom: 14px;
+        
+        font-size: 17px;
+    }
+
+    .hero-form-element-input {
+       
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: 210px;
+      
+      
+        /* border-color: transparent; */
+      
+    }
+
+    .hero-form-element-email {
+        height: 35px;
+        width: 208px;
+        margin-bottom: 16px;
+    }
+
+    .hero-form-element-password {
+
+        height: 35px;
+        width: 206px;
+    }
+
+    .hero-form{
+        height: 225px;
+        width: 240px;
+    }
+
+    .hero-form-button {
+        /* margin-bottom: 27px; */
+        padding-top: 11px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 240px;
+        height: 46px;
+        background-color: #ff8b38;
+    }
+
+    .clip-image-content{
+        padding: 100px 30px;
+    }
+
+    .container-clip-image h1 {
+        color: white;
+        margin-bottom: 35px;
+        padding-top: 25px;
+        font-family: "Raleway", sans-serif;
+        font-size: 24px;
+    }
+
+    .clip-image-content p::before{
+        top: -25px;
+    }
+
+    .clip-image-content p {
+        position: relative;
+        font-family: "Raleway-Light", sans-serif;
+        font-size: 11px;
+        color: white;
+        opacity: 0.8;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    .transition-content h3{
+        margin-bottom: 20px;
+    }
+    .transition-content p{
+        margin-bottom: 20px;
+    }
+
+    .transition-image{
+        margin-top:100px;
+    }
+
+    .transition-list-wrap{
+        padding-top: 100px;
+    padding-bottom: 90px;
+    }
+
+    .transition-list-button-selected,.transition-list-button-mouseover{
+        height: 120px;
+        width: 120px;
+    padding:52px 0 0 0;
+       text-align: center;
+    }
+
+    .transition-list ul {
+        padding-left: 50px;
+        padding-top: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .clip-image-content{
+        padding: 100px 70px;
+    }
+
+    .subsection-content{
+        margin-left: auto;
+    }
+
+    .standard-picture-image img{
+        width: 450px;
+    }
+    .subsection-image img{
+        width: 450px;
+    }
+
+    .subsection-image{
+        float: none;
+        margin: 10px;
+    }
+
+    .sub-list-section{
+        padding-left: 35px;
+    }
+
+    .awesome-page{
+        padding: ;
+    }
+
+    .awesomepage-content{
+        margin-bottom: 50px;
+    }
+
+    .awesomepage-content img{
+        margin-bottom: 12px;
+    }
+
+    .transition-content{
+        text-align: center;
+        padding: 0;
+    }
+
+    .standard-picture-image {
+        padding-left: 30px;
+    }
+
+    .hero-icons {
+        /* float: right; */
+        margin-top: 44px;
+    }
+
+    .hero-icons i {
+        margin-left: 11px;
+        color: #86878b;
+        /* content: ""; */
+        font-size: 27px;
+    }
+
+    .social-media-content p {
+        font-size: 11px;
+    }
+    .social-media-content h3 {
+        font-size: 18px;
+    }
 
 }
 
@@ -39,6 +251,13 @@
     }
 
 
+    .clip-image-content p::before{
+        top: -27px;
+    }
+
+    .container-clip-image h1{
+        margin-bottom: 35px;
+    }
 
 
 
@@ -62,7 +281,11 @@
         width: 350px;
     }
     .subsection-image img{
-        width: 350px
+        width: 350px;
+    }
+
+    .subsection-image{
+        padding: 100px 30px 100px 0px;
     }
 
     .transition-content h3{
@@ -87,6 +310,14 @@
     padding:40px 0 0 0;
        text-align: center;
     }
+
+    .transition-list ul{
+        padding-left: 70px;
+        /* padding-top: 50px; */
+    }
+
+
+
 
 }
 
@@ -119,6 +350,10 @@
 
     .transition-content{
         padding:0 30px;
+    }
+
+    .transition-list-wrap{
+        padding-bottom: 70px;
     }
 
     .transition-list-wrap .col-lg-4{

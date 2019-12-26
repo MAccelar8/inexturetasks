@@ -17,10 +17,12 @@ function formValidate() {
 }
 
 function validateFnRequired(requiredObject) {
+  // console.log("alert Meesas")
   if (requiredObject.value == "") {
     document.getElementById("fn-required-alert").style.display = "block";
     document.getElementById("fn-required-alert").innerHTML =
       "This Field is required";
+      // alert("Required Fiel")
 
     return 1;
   } else {
