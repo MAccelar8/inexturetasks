@@ -1,5 +1,5 @@
 function formValidate() {
-    // console.log("Form Loaded");
+  // console.log("Form Loaded");
   if (
     !validateFnRequired(document.getElementById("inputFirstName")) &&
     !validateLnRequired(document.getElementById("inputLastName")) &&
@@ -8,9 +8,9 @@ function formValidate() {
     !validateEmail(document.getElementById("exampleInputEmail")) &&
     !confirmPassword(document.getElementById("inputConfirmPassword"))
   ) {
-        document.getElementById("submit-button").disabled = false;
-        document.getElementById("submit-button").classList.remove("disabled");
-  }else{
+    document.getElementById("submit-button").disabled = false;
+    document.getElementById("submit-button").classList.remove("disabled");
+  } else {
     document.getElementById("submit-button").disabled = true;
     document.getElementById("submit-button").classList.add("disabled");
   }
@@ -22,13 +22,38 @@ function validateFnRequired(requiredObject) {
     document.getElementById("fn-required-alert").style.display = "block";
     document.getElementById("fn-required-alert").innerHTML =
       "This Field is required";
-      // alert("Required Fiel")
+    // alert("Required Fiel")
 
     return 1;
-  } else {
-    document.getElementById("fn-required-alert").style.display = "none";
-    return 0;
   }
+
+  for (i = 0; i < requiredObject.value.length; i++) {
+    if (
+      !((requiredObject.value[i] >= "A" && requiredObject.value[i] <= "Z") ||
+      (requiredObject.value[i] >= "a" && requiredObject.value[i] <= "z"))
+    ) {
+      document.getElementById("fn-required-alert").style.display = "block";
+      document.getElementById("fn-required-alert").innerHTML =
+        "Firstname should'nt contain characters other than alphabets";
+      return 1;
+    }
+  }
+
+  document.getElementById("fn-required-alert").style.display = "none";
+  return 0;
+
+  // else if (
+
+  // ) {
+  //   document.getElementById("fn-required-alert").style.display = "block";
+  //   document.getElementById("fn-required-alert").innerHTML =
+  //     "Firstname should'nt contain spaces";
+  //   // alert("Required Fiel")
+
+  //   return 1;
+  // } else {
+
+  // }
 }
 
 function validateLnRequired(requiredObject) {
@@ -37,10 +62,32 @@ function validateLnRequired(requiredObject) {
     document.getElementById("ln-required-alert").innerHTML =
       "This Field is required";
     return 1;
-  } else {
-    document.getElementById("ln-required-alert").style.display = "none";
-    return 0;
   }
+
+  for (i = 0; i < requiredObject.value.length; i++) {
+    if (
+      !((requiredObject.value[i] >= "A" && requiredObject.value[i] <= "Z") ||
+      (requiredObject.value[i] >= "a" && requiredObject.value[i] <= "z"))
+    ) {
+      document.getElementById("ln-required-alert").style.display = "block";
+      document.getElementById("ln-required-alert").innerHTML =
+        "Lastname should'nt contain characters other than alphabets";
+      return 1;
+    }
+  }
+
+  document.getElementById("ln-required-alert").style.display = "none";
+  return 0;
+
+  // else if (requiredObject.value.includes(" ")) {
+  //   document.getElementById("ln-required-alert").style.display = "block";
+  //   document.getElementById("ln-required-alert").innerHTML =
+  //     "Lastname should'nt contain spaces";
+  //   return 1;
+  // } else {
+  //   document.getElementById("ln-required-alert").style.display = "none";
+  //   return 0;
+  // }
 }
 
 function validateAddress(addObject) {
@@ -88,17 +135,20 @@ function getFileData(fileObject) {
 }
 
 function validatePhoneNumber(phnoObject) {
-  console.log(phnoObject.value);
+  // console.log(phnoObject.value);
+  phno =  phnoObject.value.trim();
   phnoError = "";
-  if (phnoObject.value.length != 10) {
+  if (phno.length != 10) {
     // phnoError += "Phone Number must be of 10 digits\n";
     document.getElementById("phone-alert").style.display = "block";
     document.getElementById("phone-alert").innerHTML =
       "Phone Number must be of 10 digits";
     return 1;
   } else {
-    for (var i = 0; i < phnoObject.value.length; i++) {
-      if (isNaN(phnoObject.value[i])) {
+    for (var i = 0; i < phno.length; i++) {
+      console.log(isNaN(phno[i]));
+      if (isNaN(phno[i])) {
+        // console.log(isNaN(phnoObject.value[i]));
         phnoError += "Please Enter only Digits";
         break;
       }
@@ -117,6 +167,25 @@ function validatePhoneNumber(phnoObject) {
 }
 
 function validateEmail(EmailObject) {
+  var eval = EmailObject.value;
+
+  var emailSpecial = ["@", ".", "-", "_"];
+
+  for (var i = 0; i < eval.length; i++) {
+    if (
+      !(
+        (eval[i] >= "A" && eval[i] <= "Z") ||
+        (eval[i] >= "a" && eval[i] <= "z") ||
+        emailSpecial.includes(eval[i])
+      )
+    ) {
+      document.getElementById("email-alert").style.display = "block";
+      document.getElementById("email-alert").innerHTML =
+        "Please enter only valid characters [alphabets,@,.,numbers]";
+      return 1;
+    }
+  }
+
   if (!EmailObject.value.includes("@")) {
     document.getElementById("email-alert").style.display = "block";
     document.getElementById("email-alert").innerHTML =
@@ -157,7 +226,7 @@ function validateEmail(EmailObject) {
   } else {
     document.getElementById("email-alert").style.display = "block";
     document.getElementById("email-alert").innerHTML = emailError;
-    return 1
+    return 1;
   }
 }
 
@@ -167,6 +236,7 @@ function passwordfocus() {
 }
 
 function confirmPassword(confPassObj) {
+  
   var confirmPassword = confPassObj.value;
   // console.log(validatePassword(document.getElementById("inputPassword")));
   if (validatePassword(document.getElementById("inputPassword"))) {
@@ -188,7 +258,12 @@ function confirmPassword(confPassObj) {
 }
 
 function validatePassword(passObj) {
-  // console.log("Pass")
+  // var temp = document.getElementById("inputPassword").value;
+  // console.log(temp)
+  // // console.log("Pass")
+  // console.log(passObj.value);
+
+  console.log("key pressed");
 
   password = passObj.value;
 
@@ -275,7 +350,7 @@ function validatePassword(passObj) {
   }
 }
 function validateForm() {
-    console.log("submoitter")
+  console.log("submoitter");
   //   var address, password;
   //   address = document.getElementById("inputAddress").value;
   //   let addresswithoutspaces = address.replace(/\s/g, "");

@@ -1,0 +1,143 @@
+.hero-image-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/background.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  position: relative;
+}
+
+.hero-image {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+}
+body,
+html {
+  margin: 0;
+}
+
+.gutter-sizer { width: 4.5%; }
+
+.form-info-section {
+  background-color: #f7f7f7;
+  padding: 80px 0px;
+}
+.form-info-form input {
+  background-color: #f7f7f7;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form-info-button {
+  border-radius: 50px;
+  height: 40px;
+  width: 150px;
+}
+
+.featured-products {
+  padding: 40px 0px;
+  
+}
+
+.grid{
+    text-align: center;
+    /* padding-left: 2.8%; */
+}
+
+.grid-item {
+    position: relative;
+  width: 30%;
+  margin-bottom: 20px;
+}
+.grid-item img {
+  display: block;
+  width: 100%;
+}
+
+.grid-item-2 {
+  margin-top: 5%;
+}
+
+.quote-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/images/background-1.png");
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+}
+
+
+.quote-content h3{
+    margin-top: 30px;
+    color: white;
+}
+
+.quote-paragraph{
+    margin-top: 30px;
+}
+.quote-content p{
+    color: white;
+}
+
+.grid-tags{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.grid-tags span{
+    float: right;
+}
+
+.grid-tags-wrapper{
+    position: absolute;
+    bottom: 0;
+    padding: 15px 15px;
+    font-size: small    ;
+    text-align: left;
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+}
+
+
+.special-products{
+    background-color: #f7f7f7;
+    padding: 50px 0px;
+}
+
+
+
+
+.grid-tags-special{
+    
+    position: absolute;
+    bottom: 0;
+    padding: 10px 15px;
+    font-size: small    ;
+    text-align: left;
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.grid-tags-special span{
+    float: right;
+}
+
+footer{
+    padding: 20px;
+}

@@ -1,0 +1,152 @@
+/* @media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+}
+@media only screen and (min-width: 768px) and (max-width:991px) {
+
+}
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .hero-image-container {
+        height: 500px;
+        width: 100%;
+        background-position: center;
+        
+        background-size: cover;
+      }
+}
+@media only screen and (min-width: 1200px){
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 1199px) {
+  .hero-image-container {
+    min-height: 500px;
+    width: 100%;
+    background-position: top;
+    
+    background-size: cover;
+  }
+  
+  .quote-section{
+      padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-image-container {
+        min-height: 400px;
+        width: 100%;
+        background-position: top;
+        
+        background-size: cover;
+      }
+      
+      .featured-products p{
+          font-size: 16px;
+      }
+      .special-products p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-image-container {
+        min-height: 300px;
+        width: 100%;
+        background-position: top;
+        
+        background-size: cover;
+      }
+
+      .form-info-content{
+          text-align: center;
+          margin-bottom: 24px;
+      }
+
+      .form-info-content h3{
+          font-size: 20px;
+      }
+      .form-info-content p{
+        font-size: 12px;
+    }
+
+    .form-info-button{
+        height: 35px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .form-info-form{
+        text-align: center;
+    }
+
+    .form-info-form h3{
+        font-size: 20px;
+    }
+
+    .form-info-form input{
+        font-size: 16px;
+    }
+
+    .grid-tags-wrapper{
+        font-size: 10px;
+        padding: 6px 9px;
+    }
+
+  
+    .grid-tags{
+        padding: 3px 6px;
+    }
+    .grid-tags-special{
+        padding: 6px 9px;
+        font-size: 10px;
+    }
+    .featured-products h2{
+        font-size: 22px;
+    }
+    .featured-products p{
+        font-size: 14px;
+    }
+
+    .special-products h2{
+        font-size: 22px;
+    }
+    .special-products p{
+        font-size: 14px;
+    }
+
+    .quote-content p{
+        font-size: 16px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+  
+}
+
+@media only screen and (max-width: 567px) {
+  .hero-image h1 {
+    color: red;
+  }
+} 
