@@ -51,7 +51,9 @@ html {
     text-align: center;
     /* padding-left: 2.8%; */
 }
-
+.grid-sizer{
+  width: 30%;
+}
 .grid-item {
     position: relative;
   width: 30%;

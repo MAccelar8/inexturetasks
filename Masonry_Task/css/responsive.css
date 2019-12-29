@@ -70,6 +70,34 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+
+    .grid-sizer{
+        width: 42%;
+    }
+
+    .grid-content{
+        width: 100%!important;
+    }
+
+    .grid-item{
+        width: 45%;
+    }
+    .gutter-sizer{
+        width: 10%;
+    }
+
+    .grid-item-2{
+        margin-top: 0%;
+    }
+
+
+
+
+
+
+
+
     .hero-image-container {
         min-height: 300px;
         width: 100%;
@@ -109,18 +137,26 @@
     }
 
     .grid-tags-wrapper{
-        font-size: 10px;
+        font-size: 12px;
         padding: 6px 9px;
     }
 
   
     .grid-tags{
-        padding: 3px 6px;
-    }
-    .grid-tags-special{
         padding: 6px 9px;
-        font-size: 10px;
     }
+    .grid-tags-special {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .featured-products{
+        padding: 40px 0px 40px 30px;
+    }
+    .special-products{
+        padding: 40px 0px 40px 30px;
+    }
+
     .featured-products h2{
         font-size: 22px;
     }
@@ -146,7 +182,60 @@
 }
 
 @media only screen and (max-width: 567px) {
-  .hero-image h1 {
-    color: red;
-  }
+    .featured-products {
+        padding: 40px 0px 40px 10px;
+    }
+    .special-products {
+        padding: 40px 0px 40px 10px;
+    }
+
+    .hero-image h1{
+        font-size: 36px;
+    }
+
+    .grid-sizer{
+        width: 42%;
+    }
+
+    .grid-content{
+        width: 100%!important;
+    }
+
+    .grid-item{
+        width: 45%;
+    }
+    .gutter-sizer{
+        width: 10%;
+    }
+
+    .grid-item-2{
+        margin-top: 0%;
+    }
+
+    .quote-content p {
+        font-size: 12px;
+    }
+
+    .quote-content h3 {
+        margin-top: 20px;
+    }
+    .quote-section {
+        padding: 60px 15px;
+    }
+
+
+    .grid-tags-wrapper {
+        font-size: 9px;
+        padding: 5px 5px;
+    }
+    .grid-tags {
+        padding: 6px 6px;
+    }
+
+    .grid-tags-special {
+        padding: 6px 6px;
+        font-size: 11px;
+    }
+
+
 } 
