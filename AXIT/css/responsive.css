@@ -1,4 +1,120 @@
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 70px) and (max-width:319px){
+  .test-hero-image{
+    height: fit-content;
+    padding: 10px 0;
+  }
+  .subsection-image img{
+    width: 100%;
+  }
+  .standard-picture-image img{
+    width: 100%
+  }
+  .transition-image img{
+    width: 100%;
+  }
+  .test-clip-content img{
+    display: none;
+  }
+  .test-clip-content p{
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .test-clip-content h1{
+    font-size: 5vw;
+  }
+  .test-clip-content button{
+    width: 100%;
+    font-size: .5vw;
+    padding: 0;
+  }
+
+  .navbar{
+    width: 100%;
+    padding: 0;
+  }
+
+
+  .form-info-form{
+    width: 100%;
+  }
+  .form-info-form input {
+    width: 80%;
+    height: 35px;
+    margin-left: 10%;
+    margin-bottom: 0px;
+}
+
+.form-info-form button {
+  width: 100%;
+  
+}
+.test-clip-content p::before{
+  content: none;
+}
+
+.transition-list {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.transition-list ul li {
+  display: inline;
+}
+
+.transition-list ul {
+  padding: 0;
+}
+.transition-list-button-selected,
+.transition-list-button-mouseover {
+  height: 120px;
+  width: 120px;
+  padding: 1% 1%;
+  text-align: center;
+}
+
+.transition-content {
+  /* padding-left: 20px; */
+  padding: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contactus-content h3 {
+  font-size: 1rem;
+}
+.contactus-component button {
+ margin-top: 10px;
+  font-size: 0.5rem;
+  width: 100%;
+}
+
+.awesomepage-title h2{
+  font-size: 1rem;
+}
+.awesomepage-content p{
+  font-size: 0.5rem;
+}
+
+.standard-picture-section h5{
+  font-size: 1rem;
+}
+
+.stylish-axure-content h3{
+  font-size: 1rem;
+}
+.stylish-axure-content button{
+  font-size: 0.5rem;
+  width: 100%;
+}
+.transition-content h3{
+  font-size: 3vw;
+}
+
+
+
+
+}
+
 @media only screen and (min-width: 320px) and (max-width: 575px) {
 
     .navbar{

@@ -92,26 +92,29 @@ html {
     color: white;
 }
 
-.grid-tags{
+/* .grid-tags{
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 15px;
     text-align: left;
-}
+} */
 
 .grid-tags span{
     float: right;
 }
 
-.grid-tags-wrapper{
+.grid-tags{
     position: absolute;
     bottom: 0;
-    padding: 15px 15px;
+    padding: 7px 15px;
     font-size: small    ;
     text-align: left;
     color: white;
     height: auto;
-    width: 100%;
-    background-color: transparent;
+    width: 84%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 

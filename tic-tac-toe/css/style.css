@@ -1,0 +1,11 @@
+.tic-tac-toe{
+    text-align: center;
+    padding: 100px 100px;
+}
+.grid-cell{
+    padding: 50px;
+}
+
+.result{
+    margin-top: 50px;
+}
