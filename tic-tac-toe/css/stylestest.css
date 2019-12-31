@@ -1,0 +1,21 @@
+.items{
+    font-size: 100px;
+    border-width: 3px;
+    border-style: solid;
+    /* margin: 5px; */
+    padding: 20px 40px;
+    border-color: royalblue;
+    /* transition: 1s all ease-in; */
+}
+
+.tic-tac-toe{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.fa-circle{
+    font-size: 20px;
+    transition: 1s all ease;
+}

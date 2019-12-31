@@ -12,82 +12,239 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
     />
-  
+
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <link rel="stylesheet" href="./css/responsive.css" /> -->
   </head>
   <body>
-        
+
+
     <div class="tic-tac-toe">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div id="tl" class="grid-cell">
-              1
+
+      <div id="popup" class="popup">
+        <div class="content text-center">
+          <h1 id="winner-text">The Winner Is</h1>
+          <button class="btn btn-primary" onclick="pagereload();">
+            Replay
+          </button>
+        </div>
+      </div>
+      <div class="player-select">
+        <button class="btn btn-danger btn-lg" onclick="redClicked();"> <i class="fas fa-times" style="font-size: 50px;"></i> </button>
+        <button class="btn btn-success btn-lg" onclick="greenClicked();"><i class="far fa-circle" style="font-size: 50px;"></i></button>
+        <h2 style="margin-top: 20px;" class="text-center">Note : Circle always gets first chance....</h2>
+      </div>
+
+      <div class="grid-wrap">
+      <div class="toprow" style="display: flex;">
+          <div id="tl" class="items" style="border-width: 0 3px 3px 0" onclick="clickevent(this);">
+            <i
+              class="grid-cross"
+            ></i>
+          </div>
+          <div id="tc" class="items" onclick="clickevent(this);" style="border-width: 0 3px 3px 3px">
+            <i
+              class="grid-cross"
+            ></i>
+          </div>
+          <div id="tr" class="items" onclick="clickevent(this);" style="border-width: 0 0 3px 3px">
+            <i
+              class="grid-cross"
+            ></i>
+          </div>
+        </div>
+    
+        <div class="toprow" style="display: flex;">
+          <div id="ml" class="items" onclick="clickevent(this);" style="border-width: 3px 3px 3px 0" >
+            <i
+              class="grid-cross"
+            ></i>
+          </div>
+          <div id="mc" class="items" onclick="clickevent(this);" style="border-width: 3px 3px 3px 3px">
+            <i
+              class="grid-cross"
+            ></i>
+          </div>
+          <div id="mr" class="items" onclick="clickevent(this);" style="border-width: 3px 0 3px 3px">
+            <i
+              class="grid-cross"
+            ></i>
+          </div>
+        </div>
+        <div class="toprow" style="display: flex;">
+          <div id="bl" class="items" onclick="clickevent(this);" style="border-width: 3px 3px 0 0">
+            <i
+              class="grid-cross"
+            ></i>
+            <i ></i>
+          </div>
+          <div id="bc" class="items" onclick="clickevent(this);" style="border-width: 3px 3px 0 3px">
+            <i
+              class="grid-cross"
+            ></i>
+          </div>
+          <div id="br" class="items" onclick="clickevent(this);" style="border-width: 3px 0 0 3px">
+            <i
+              class="grid-cross"
+            ></i>
+          </div>
+        </div>
+      </div>
+        <!-- <div class="wrp" onclick="testingfn()" style="padding: 10px;background-color: blue;">
+          <div class="test">
+              <i class="far" ></i>
             </div>
-          </div>       
-          <div class="col-md-4">
-            <div id="tc" class="grid-cell">
+        </div> -->
+      
+  </div>
+
+
+
+
+
+
+    <!-- <div class="wraper">
+      <div class="tic-tac-toe">
+        <div class="container">
+          <div class="row">
+            <div class="holder">
+              <div id="popup" class="popup">
+                <div class="content text-center">
+                  <h1 id="winner-text">The Winner Is</h1>
+                  <button class="btn btn-primary" onclick="pagereload();">
+                    Replay
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="player-select">
+              <button class="btn btn-danger btn-lg" onclick="redClicked();">Red</button>
+              <button class="btn btn-success btn-lg" onclick="greenClicked();">Green</button>
+            </div>
+            <div class="col-md-4">
+              <div
+                id="tl"
+                class="grid-cell"
+                ondblclick="dblclick(this);"
+                onclick="clickevent(this);"
+              >
+              <i class="grid-icons"></i>
+                1
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                id="tc"
+                class="grid-cell"
+               
+                ondblclick="dblclick(this);"
+                onclick="clickevent(this);"
+              >
+              <i class="grid-icons"></i>
               2
+              </div>
             </div>
-          </div> 
-          <div class="col-md-4">
-            <div id="tr" class="grid-cell">
-              3
+            <div class="col-md-4">
+              <div
+                id="tr"
+                class="grid-cell"
+                ondblclick="dblclick(this);"
+                onclick="clickevent(this);"
+              >
+              <i class="grid-icons"></i>
+                3
+              </div>
             </div>
-          </div> 
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div id="ml" class="grid-cell">
-              4
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div
+                id="ml"
+                class="grid-cell"
+                ondblclick="dblclick(this);"
+                onclick="clickevent(this);"
+              >
+              <i class="grid-icons"></i>
+                4
+              </div>
             </div>
-          </div>       
-          <div class="col-md-4">
-            <div id="mc" class="grid-cell">
-              5
+            <div class="col-md-4">
+              <div
+                id="mc"
+                class="grid-cell"
+                ondblclick="dblclick(this);"
+                onclick="clickevent(this);"
+              >
+              <i class="grid-icons"></i>
+                5
+              </div>
             </div>
-          </div> 
-          <div class="col-md-4">
-            <div id="mr" class="grid-cell">
-              6
+            <div class="col-md-4">
+              <div
+                id="mr"
+                class="grid-cell"
+                ondblclick="dblclick(this);"
+                onclick="clickevent(this);"
+              >
+              <i class="grid-icons"></i>
+                6
+              </div>
             </div>
-          </div> 
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div id="bl" class="grid-cell">
-              7
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div
+                id="bl"
+                class="grid-cell"
+                ondblclick="dblclick(this);"
+                onclick="clickevent(this);"
+              >
+              <i class="grid-icons"></i>
+                7
+              </div>
             </div>
-          </div>       
-          <div class="col-md-4">
-            <div id="bc" class="grid-cell">
-              8
+            <div class="col-md-4">
+              <div
+                id="bc"
+                class="grid-cell"
+                ondblclick="dblclick(this);"
+                onclick="clickevent(this);"
+              >
+              <i class="grid-icons"></i>
+                8
+              </div>
             </div>
-          </div> 
-          <div class="col-md-4">
-            <div id="br" class="grid-cell">
-              9
+            <div class="col-md-4">
+              <div
+                id="br"
+                class="grid-cell"
+                ondblclick="dblclick(this);"
+                onclick="clickevent(this);"
+              >
+              <i class="grid-icons"></i>
+                9
+              </div>
             </div>
-          </div> 
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="result">
-              TExt
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="resultdisplay" class="result"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-
+    </div> -->
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
