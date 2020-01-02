@@ -11,18 +11,19 @@ $(document).ready(function() {
 
 $('.form-control').click(function(){jQuery(this).attr('placeholder', '')})
 
-function linkclicked(Obj){
-  console.log(Obj)
-  document.getElementById("home").classList.remove('nav-home');
-  document.getElementById("about").classList.remove('nav-about');
-  document.getElementById("services").classList.remove('nav-services');
-  document.getElementById("work").classList.remove('nav-work');
-  document.getElementById("contact").classList.remove('nav-contact');
 
-  var name = "nav-"+ Obj.id;
+// function linkclicked(Obj){
+//   console.log(Obj)
+//   document.getElementById("home").classList.remove('nav-home');
+//   document.getElementById("about").classList.remove('nav-about');
+//   document.getElementById("services").classList.remove('nav-services');
+//   document.getElementById("work").classList.remove('nav-work');
+//   document.getElementById("contact").classList.remove('nav-contact');
 
-  Obj.classList.add(name);
-}
+//   var name = "nav-"+ Obj.id;
+
+//   Obj.classList.add(name);
+// }
 
 
 function filtercontent(Obj){

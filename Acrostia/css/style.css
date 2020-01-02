@@ -8,6 +8,7 @@ font-family: 'Damion', cursive; */
 
 html {
   scroll-behavior: smooth;
+  
 }
 body {
   font-family: "Lato", sans-serif;
@@ -16,12 +17,41 @@ body {
 header {
   width: 100%;
   position: fixed;
-  background-color: transparent;
+  background-color: rgba(0,0,0,0.1);
   z-index: 5;
 }
+
+#services .active{
+    background-color: #df5c64;
+    transition:  0.2s all ease;
+}
+#home .active{
+    background-color: #74c7d5;
+    transition:  0.2s all ease;
+}
+
+#work .active{
+    background-color: #a1ca6c;
+  transition:  0.2s all ease;
+}
+
+#about .active{
+    background-color: #90778d;
+  transition:  0.2s all ease;
+}
+#contact .active{
+    background-color: #82c8bd;
+  transition:  0.2s all ease;
+}
+
+
+
+
+
 .navbar {
   padding: 0;
 }
+
 
 nav.navigationbar {
   display: inline-block;
@@ -36,10 +66,11 @@ nav.navigationbar {
 }
 
 .nav-link {
-  padding: 30px 20px 10px 20px !important;
+  padding: 30px 25px 20px 25px !important;
   border-radius: 0 0 4px 4px;
 }
 
+/* 
 .nav-home {
   background-color: #74c7d5;
   transition: 1s all ease-out;
@@ -59,7 +90,7 @@ nav.navigationbar {
 .nav-contact {
   background-color: #82c8bd;
   transition: 1s all ease-out;
-}
+} */
 
 .navbar-logo {
   font-family: "Damion", cursive;
@@ -73,11 +104,12 @@ nav.navigationbar {
 .home-page-image {
   background-image: url("../assets/images/main-banner.png");
   height: 100vh;
-  width: 100%;
-  background-position: top;
-  background-size: cover;
-  content: "";
-  position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* content: ""; */
+    position: relative;
 }
 
 .slick-dots {
@@ -91,10 +123,13 @@ nav.navigationbar {
   color: #74c7d5;
 }
 
-.slick-dots li button:focus:before,
-.slick-dots li button:hover:before {
-  opacity: 0.25;
+.slick-dots li button:focus:before {
+  opacity: 1;
   color: #74c7d5;
+}
+.slick-dots li button:hover:before{
+    opacity: 0.5;
+    color: #74c7d5;
 }
 
 .slick-dots li button:before {
@@ -134,11 +169,15 @@ h3 {
   right: 5%;
   background-image: url("../assets/images/arrow-right.png");
 }
-/* 
-.slick-next:focus, .slick-prev:focus{
-    z-index: 10;
-   color: white;
-} */
+
+.slick-next:hover,.slick-next:focus{
+    background-image: url("../assets/images/arrow-right.png");
+}
+
+.slick-prev:hover,.slick-prev:focus{
+    background-image: url("../assets/images/arrow-lef.png");
+   
+}
 
 .slick-prev::before {
   content: "";
@@ -161,7 +200,7 @@ h3 {
 }
 
 .acrostia-headers {
-  margin-top: 60px;
+  margin-top: 80px;
   margin-bottom: 15px;
   font-weight: 300;
   font-size: 45px;
@@ -249,15 +288,19 @@ h3 {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .filtr-item img {
-  margin: 10px 10px 0 10px;
+    background-color: black;
+  /* margin: 10px 10px 0 10px; */
   /* height: 150px;
     width: 150px;*/
 }
 .wrapper {
   display: flex;
 }
-.filtr-content {
+.filter-content {
   position: relative;
+  /* width: 100px; */
+  margin: 10px 10px 0;
+  
 }
 
 .grid-tags::before {
@@ -272,11 +315,16 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
 }
+
+
+
 .grid-tags {
-  bottom: 15px;
-  position: relative;
+
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
   text-align: center;
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
   background-color: #eeeeee;
   /* position: absolute; */
   /* bottom: 10px; */
@@ -284,14 +332,17 @@ h3 {
   /* width: 100%; */
 }
 
+
+
+
 .service-card {
   text-align: center;
-  height: fit-content;
-  width: fit-content;
+  height: 400px;
+  width: 260px;
   background-color: #c8535a;
   color: white;
   /* margin-top: 25px; */
-  padding: 40px 25px;
+  padding: 10px 25px;
   border-radius: 8px;
 }
 .service-card-icon {
@@ -332,11 +383,13 @@ h3 {
 .service-card-header {
   font-weight: 300;
   font-size: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 42px;
 }
 .service-card-paragraph {
   color: white;
   font-size: 14px;
+  padding: 0%;
+  margin: none;
 }
 
 
@@ -450,7 +503,7 @@ h3 {
   .about-card:hover .about-icons-twitter{
     background-color: #74c7d5;
   }
-  .about-card:hover .about-card{
+  .about-card:hover{
     background-color: #4C3F4B;
     opacity: 0.9;
   }
@@ -555,3 +608,10 @@ footer {
   font-size: 30px;
   margin-top: 15px;
 }
+
+.socialmedia-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+
