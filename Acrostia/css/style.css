@@ -283,10 +283,7 @@ h3 {
   font-size: 24px;
 }
 
-.filtr-item:hover img {
-  /* -webkit-filter: blur(5px); */
-  background-color: rgba(255, 255, 255, 0.3);
-}
+
 .filtr-item img {
     background-color: black;
   /* margin: 10px 10px 0 10px; */
@@ -315,7 +312,10 @@ h3 {
     height: 100%;
     width: 100%;
     transition: 0.2s all cubic-bezier(0.17, 0.46, 1, 0.69);
+   
 }
+
+
 
 .hover-content {
     content: '';

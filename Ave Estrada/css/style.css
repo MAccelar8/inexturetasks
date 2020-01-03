@@ -1,0 +1,152 @@
+html {
+    font-size: 1rem;
+  }
+
+.teko{
+    font-family: 'Teko', sans-serif;
+}
+
+.popins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.estrada-header{
+    margin-bottom: 1.2rem;
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.estrada-header::before{
+    position: absolute;
+    content: '';
+    height: 0.1rem;
+    width: 5rem;
+    background-color: #ea6651;
+    bottom: -0.5rem;
+}
+
+.estrada-color{
+    color: #ea6651;
+}
+.estrada-paragraph{
+    font-size: 0.6rem;
+    color: rgba(0,0,0,0.6);
+}
+
+.astrada-more-link,.astrada-more-link:hover{
+    color: #ea6651;
+    font-size: 0.7rem;
+    text-decoration: none!important;
+}
+
+.section-class{
+    margin-top: 6rem;
+}
+
+
+header {
+    margin-top: 12px;
+    width: 100%;
+    position: fixed;
+    /* background-color: rgba(0,0,0,0.1); */
+    z-index: 5;
+  }
+
+.nav-link{
+    color: white!important;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+}
+
+
+.hero-page-background{
+    position: relative;
+    background-image: url('../assets/Images/bg-94.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-page-content {
+    color: white;
+    /* height: 100vh; */
+    /* width: 100%; */
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translateY(-50%);
+}
+
+.hero-large-text{
+    font-size: 6rem;
+}
+.hero-small-text{
+    font-size: 0.7rem;
+}
+.hero-page-content span{
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+}
+.hero-page-button{
+    border-color: #ea6651;
+    border-width: 2px;
+}
+.hero-page-button:hover{
+    background-color: #ea6651;
+    border-color: #ea6651;
+    color: white;
+}
+
+.about{
+    width: 100%;
+}
+
+.about-studio-para{
+    font-size: 0.9em;
+}
+.about-image img{
+    text-align: center;
+    height: 20rem;
+    width: 17rem;
+}
+
+.misc h1{
+    font-weight: 400;
+}
+.misc-heading{
+    font-size: 1.4rem;
+}
+
+
+.work-nav ul{
+    float: right;
+}
+.work-nav li{
+    display: inline-block;
+}
+
+.work-nav a{
+    padding: .5rem .2rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.5rem;
+    color: rgba(0,0,0,0.6)!important;
+    text-transform: uppercase;
+}
+
+.grid-item{
+    width: 32%;
+}
+.grid-sizer{
+    width: 33%;
+}
+.gutter-sizer{
+    width: 2%;
+}
+
+
+
+
