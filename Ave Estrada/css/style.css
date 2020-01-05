@@ -140,7 +140,9 @@ header {
     border: none;
 }
 
-
+.grid-item{
+    /* margin-bottom: 20px; */
+}
 
 .grid-item,.grid-sizer{
     margin-bottom: 25px;
