@@ -60,9 +60,126 @@
     html {
         font-size: 1.2rem;
       }
+
+      .hero-large-text {
+        font-size: 4.5rem;
+    }
+
+      .grid-item {
+        margin-bottom: 25px;
+        width: 100%;
+        float: left;
+    }
+    .grid-sizer{
+        width: 100%;
+    }
+
+    .footer-para {
+        letter-spacing: 0rem;
+    }
+
 }
 
 
-@media only screen and (max-width: 450px){  
+@media only screen and (max-width: 575px){ 
+    .section-class {
+        /* background-color: white; */
+        padding-top: 2rem;
+    }
+
+    .hero-large-text {
+        font-size: 3rem;
+    }
+
+    .about-studio-para {
+        font-size: 0.7em;
+    }
+
+    .about-content {
+        padding-bottom: 0rem;
+    }
+
+    .estrada-header {
+        margin-bottom: 1rem;
+        /* position: relative; */
+        /* font-family: 'Teko', sans-serif; */
+        font-size: 1.5rem;
+        /* font-weight: 400; */
+    }
+    .misc h1 {
+        padding-top: 0rem;
+        margin-bottom: 0;
+    }
+    .misc{
+        text-align: center;
+    }
+
+    .about-image{
+        display: none;
+    }
+    .grid-item {
+        margin-bottom: 25px;
+        width: 100%;
+        float: left;
+    }
+    .grid-sizer{
+        width: 100%;
+    }
+    
+    .footer-card{
+        text-align: center;
+    }
+
+    .estrada-footer {
+        position: unset;
+        z-index: none;
+        /* height: fit-content; */
+        width: 100%;
+        /* bottom: 0; */
+    }
+
+    .news{
+        margin-bottom: 1rem;
+    }
+
+}
+    .footer-card h3{
+        margin-bottom: 0%;
+    }
+
+    .footer-card::before{
+        position: absolute;
+        height: 1px;
+        width: 30%;
+        content: '';
+        background-color: #ea6651;
+        bottom: -0.7rem;
+    transform: translateX(-50%);
+    }
+    .footer-card{
+        position: relative;
+        margin-bottom: 1.4rem;
+    }
+
+    .footer-upper-pre::before {
+      content: none;
+    }
+    .footer-upper-pre {
+        position: unset;
+        margin-bottom: 0rem;
+    }
+
+    .footer-button {
+        margin: 0;
+        float: none!important;
+        margin:  0.5rem 0 1rem 0;
+        /* position: relative!important; */
+        background-color: #ea6651;
+        color: white;
+        border: 1px #ea6651;
+        font-size: 0.8rem;
+    }
+
+
 
 }   
