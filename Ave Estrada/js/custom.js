@@ -18,16 +18,16 @@ $(".grid").masonry({
   itemSelector: ".grid-item",
   columnWidth: ".grid-sizer",
   percentPosition: true,
-  gutter: ".gutter-sizer"
+  gutter: 25
 });
 
 $('.work-filter').on('mixEnd', function() {
     
 $(".grid").masonry({
-    // options
-    itemSelector: ".grid-item",
-    columnWidth: ".grid-sizer",
-    percentPosition: true,
-    gutter: ".gutter-sizer"
-  });
+  // options
+  itemSelector: ".grid-item",
+  columnWidth: ".grid-sizer",
+  percentPosition: true,
+  gutter: 25
+});
   });

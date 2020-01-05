@@ -6,13 +6,54 @@
 }
 
 @media only screen and (max-width: 1199px) {
- 
+    html {
+        font-size: 1.5rem;
+      }
+
+      .news{
+        margin-bottom: 22rem;
+    }
 }
 
 @media only screen and (max-width: 991px) {
     html {
         font-size: 1.4rem;
       }
+
+      .section-class {
+        background-color: white;
+        padding-top: 4rem;
+    }
+
+    .about-content {
+        padding-bottom: 2rem;
+    }
+
+    .misc h1 {
+        padding-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .work-nav {
+        text-align: left!important;
+        padding: 0px;
+    }
+    .grid-item, .grid-sizer {
+        margin-bottom: 25px;
+        width: 48.1%;
+        float: left;
+    }
+
+    .team-large-text{
+        font-size: 2rem;
+    }
+
+    .news-image{
+        margin-bottom: 1rem;
+    }
+    .news{
+        margin-bottom: 25rem;
+    }
 }
 
 @media only screen and (max-width: 767px) {

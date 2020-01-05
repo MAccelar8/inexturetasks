@@ -41,7 +41,8 @@ html {
 }
 
 .section-class{
-    margin-top: 6rem;
+    background-color: white;
+    padding-top: 6rem;
 }
 
 
@@ -128,25 +129,244 @@ header {
     display: inline-block;
 }
 
-.work-nav a{
-    padding: .5rem .2rem;
-    text-decoration: none;
+.work-nav button{
+    /* padding: .5rem .2rem; */
+    /* text-decoration: none; */
     font-family: 'Poppins', sans-serif;
     font-size: 0.5rem;
     color: rgba(0,0,0,0.6)!important;
     text-transform: uppercase;
-}
-
-.grid-item{
-    width: 32%;
-}
-.grid-sizer{
-    width: 33%;
-}
-.gutter-sizer{
-    width: 2%;
+    background-color: transparent;
+    border: none;
 }
 
 
 
+.grid-item,.grid-sizer{
+    margin-bottom: 25px;
+    width: calc(33.33% - 17px);
+    float: left;
+}
+.work-img-wrapper img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+
+.different-roll-up{
+    font-size: 1.6rem;
+}
+
+.different-para{
+    letter-spacing: 0.05rem;
+    font-size: 0.5rem;
+    font-weight: 300;
+    color: rgba(0,0,0,0.7);
+    
+}
+
+
+
+.team-image{
+    position: relative;
+    background-image: url('../assets/Images/bg-97.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.team-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.team-large-text{
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
+}
+.team-small-text{
+    font-size: 0.6rem;
+    color: white;
+}
+/* .hero-page-content span{
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+}
+.hero-page-button{
+    border-color: #ea6651;
+    border-width: 2px;
+}
+.hero-page-button:hover{
+    background-color: #ea6651;
+    border-color: #ea6651;
+    color: white;
+} */
+
+.news-content{
+    padding-left: 1.5rem;
+    
+}
+.news{
+    margin-bottom: 20rem;
+}
+.news-image img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.news-image h3{
+    font-size: 1rem;
+}
+
+.news-date{
+    font-size: 0.35rem;
+    letter-spacing: 0.05rem;
+    color: rgba(0,0,0,0.6);
+    text-transform: uppercase;
+}
+
+
+.news-content-para::before{
+    /* margin-top: 1rem; */
+    position: absolute;
+    height: 1px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.05);
+    content: '';
+    bottom: -1rem;
+}
+
+.news-content-para{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.news-content-para h4{
+    font-size: 0.9rem;
+}
+
+
+
+.estrada-footer{
+    position: fixed;
+    z-index: -1;
+    height: fit-content;
+    width: 100%;
+    bottom: 0;
+
+
+}
+
+.branches{
+    
+    /* padding-top: 1rem; */
+    background-image: url('../assets/Images/bg-98.jpg');
+    background-position: center;
+    background-size: cover;
+    /* height: 100%; */
+    /* background-attachment: fixed; */
+    height: fit-content;
+    width: 100%;
+}
+
+.branches h1{
+    padding-top: 2rem;
+}
+
+.footer-button:hover{
+    /* position: absolute; */
+    transform: translateY(-2px);
+    background-color: #ea6651;
+    color: white;
+    border: 1px #ea6651;
+
+}
+.footer-button
+{   
+    margin-top: 2rem ;
+    /* position: relative!important; */
+    background-color: #ea6651;
+    color: white;
+    border: 1px #ea6651;
+    font-size: 0.8rem;
+}
+
+.footer-card h3 {
+    /* margin-top: 2rem; */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-para {
+    font-size: .5rem;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.05rem;
+}
+
+
+.footer-upper-pre::before{
+    position: absolute;
+    bottom: -1rem;
+    height: 1px;
+    width: 25%;
+    /* width: 100%; */
+    content: '';
+    background-color: #ea6651;
+}
+.footer-upper-pre{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.footer-content::before{
+    position: absolute;
+    bottom: -1rem;
+    height: 1px;
+    width: 100%;
+    /* width: 100%; */
+    content: '';
+    background-color: rgba(255,255,255,0.1);
+}
+.footer-content{
+    position: relative;
+    margin-bottom: 2rem;
+    /* padding-bottom: 3rem; */
+}
+
+.rights{
+    font-size: 0.5rem;
+    color: rgba(255,255,255,0.5);
+    margin-top: 0.5rem;
+}
+
+.socialmedia-list li {
+    /* position: relative; */
+  /* color: white; */
+  margin-left: 0.5rem;
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .socialmedia-list li:hover{
+  /* position: absolute; */
+  transform: translateY(-1px);
+    list-style-type: none;
+    display: inline-block;
+  }
+
+
+  .socialmedia-list li a{
+    color: rgba(255,255,255,0.5);
+}
+.socialmedia-list li a:hover{
+   
+    color: #ea6651;
+}
+/* #57606c
+
+#383b48 */
