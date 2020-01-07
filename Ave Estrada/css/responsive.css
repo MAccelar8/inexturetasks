@@ -54,6 +54,23 @@
     .news{
         margin-bottom: 25rem;
     }
+
+
+    .about-image-wrapper{
+        position: unset;
+    }
+
+    .about-image::before{
+       content: none;
+    }
+    .about-image{
+        position: unset;
+        animation: unset;
+    }
+
+    .news-content {
+        padding-left: 0rem;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -85,6 +102,12 @@
     .section-class {
         /* background-color: white; */
         padding-top: 2rem;
+    }
+    .team{
+        padding: 4rem 0rem;
+    }
+    .team-large-text {
+        font-size: 1.5rem;
     }
 
     .hero-large-text {
