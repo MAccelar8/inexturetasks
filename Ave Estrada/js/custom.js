@@ -15,23 +15,23 @@ AOS.init({
   once: true
 });
 
-$(".grid").masonry({
-  // options
-  itemSelector: ".grid-item",
-  columnWidth: ".grid-sizer",
-  percentPosition: true,
-  gutter: 25
-});
+// $(".grid").masonry({
+//   // options
+//   itemSelector: ".grid-item",
+//   columnWidth: ".grid-sizer",
+//   percentPosition: true,
+//   gutter: 25
+// });
 
-$(".work-filter").on("mixEnd", function() {
-  $(".grid").masonry({
-    // options
-    itemSelector: ".grid-item",
-    columnWidth: ".grid-sizer",
-    percentPosition: true,
-    gutter: 25
-  });
-});
+// $(".work-filter").on("mixEnd", function() {
+//   // $(".grid").masonry({
+//   //   // options
+//   //   itemSelector: ".grid-item",
+//   //   columnWidth: ".grid-sizer",
+//   //   percentPosition: true,
+//   //   gutter: 25
+//   // });
+// });
 
 document.addEventListener("aos:in", ({ detail }) => {
   // console.log('animated in', detail);

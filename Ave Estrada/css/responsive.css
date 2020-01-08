@@ -13,6 +13,12 @@
       .news{
         margin-bottom: 22rem;
     }
+
+    .mix {
+        flex-basis: 46%;
+        box-sizing: border-box;
+        /* display: inline-block; */
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -71,6 +77,27 @@
     .news-content {
         padding-left: 0rem;
     }
+
+    .misc-flipper-wrap {
+        /* width: 200px; */
+        height: 300px;
+        /* perspective: 600px; */
+    }
+    .misc-card-content h1 {
+        font-size: 4rem!important;
+    }
+    .misc-card-content {
+      
+        font-size: 0.8rem!important;
+       
+        
+    }
+    .estrada-paragraph-misc {
+        margin-top: 20px;
+        font-family: 'Poppins',sans-serif;
+        color: peachpuff;
+        font-size: 0.4rem;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -93,6 +120,35 @@
 
     .footer-para {
         letter-spacing: 0rem;
+    }
+
+    .mix {
+        flex-basis: 100%;
+        box-sizing: border-box;
+        /* display: inline-block; */
+    }
+
+    .misc-flipper-wrap {
+        /* width: 200px; */
+        margin-bottom: 20px;
+        height: 400px;
+        perspective: 600px;
+    }
+    .misc-card-content h1 {
+        font-size: 7rem!important;
+    }
+    .misc-card-content {
+      
+        font-size: 1.5rem!important;
+       
+        
+    }
+
+    .estrada-paragraph-misc {
+        margin-top: 20px;
+        font-family: 'Poppins',sans-serif;
+        color: peachpuff;
+        font-size: 0.7rem;
     }
 
 }
